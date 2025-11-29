@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Jingalabob Demonlist</title>
+    <style>
+      body {
+        background: #111;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1.title {
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 50px;
+      }
+
+      .demon-list {
+        max-width: 700px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .demon-item {
+        background: #1b1b1b;
+        padding: 15px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        transition: transform 0.25s ease, background 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .demon-item:hover {
+        transform: translateY(-6px);
+        background: #272727;
+        box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.35);
+      }
+
+      .thumbnail {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .meta {
+        width: 100%;
+        margin-top: 12px;
+        text-align: left;
+        margin-left: 1.2rem;
+      }
+
+      .video-btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 12px;
+        background: #2ecc71;
+        color: black;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">The Jingalabob Demon List</h1>
+
+    <div class="demon-list" id="demonList"></div>
+
+    <script>
+      // LEVELLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLs
+      const levels = [
+        {
+          name: "Sink",
+          creator: "Awedsy",
+          thumbnail: "thumbnails/sink.png",
+        },
+        {
+          name: "Athanatos",
+          creator: "IIExenityII",
+          thumbnail: "thumbnails/athanatos.jpg",
+        },
+        {
+          name: "Bloodbath",
+          creator: "Riot",
+          thumbnail: "thumbnails/bloodbath.jpg",
+        },
+        {
+          name: "moment",
+          creator: "lexycat",
+          thumbnail: "thumbnails/moment.jpg",
+        },
+        {
+          name: "Anahita",
+          creator: "MadisonYuko",
+          thumbnail: "thumbnails/anahita.jpg",
+        },
+        {
+          name: "Blade of Justice",
+          creator: "Manix648",
+          thumbnail: "thumbnails/bladeofjustice.jpg",
+        },
+        {
+          name: "gravity",
+          creator: "KazaGD",
+          thumbnail: "thumbnails/gravity.jpg",
+        },
+        {
+          name: "Motorbreath",
+          creator: "TwisterDude161",
+          thumbnail: "thumbnails/motorbreath.jpg",
+        },
+        {
+          name: "Sigma Interface",
+          creator: "Platnuu",
+          thumbnail: "thumbnails/sigmainterface.jpg",
+        },
+        {
+          name: "Prismatic Haze",
+          creator: "Cirtrax",
+          thumbnail: "thumbnails/prismatichaze.jpg",
+        },
+        {
+          name: "Carcano",
+          creator: "Asuith",
+          thumbnail: "thumbnails/carcano.jpg",
+        },
+        {
+          name: "cold planet",
+          creator: "drakosa",
+          thumbnail: "thumbnails/coldplanet.jpg",
+        },
+        {
+          name: "Concaved Memories",
+          creator: "CairoX",
+          thumbnail: "thumbnails/concavedmemories.jpg",
+        },
+        {
+          name: "nowdead",
+          creator: "meowdead",
+          thumbnail: "thumbnails/nowdead.jpg",
+        },
+        {
+          name: "sarthix",
+          creator: "Zeptrus",
+          thumbnail: "thumbnails/sarthix.jpg",
+        },
+        {
+          name: "Artificial Dream",
+          creator: "iIiViRuZiIi",
+          thumbnail: "thumbnails/artificialdream.jpg",
+        },
+        {
+          name: "Napalm",
+          creator: "Marwec",
+          thumbnail: "thumbnails/napalm.jpg",
+        },
+        {
+          name: "SUBVERSIVE",
+          creator: "Snowr33de",
+          thumbnail: "thumbnails/subversive.jpg",
+        },
+        {
+          name: "Penombre",
+          creator: "ZephiroX",
+          thumbnail: "thumbnails/penombre.jpg",
+        },
+        {
+          name: "Hidden in the Sand",
+          creator: "ASBCHazel",
+          thumbnail: "thumbnails/hiddeninthesand.jpg",
+        },
+        {
+          name: "Bangarang",
+          creator: "LP44",
+          thumbnail: "thumbnails/bangarang.jpg",
+        },
+        {
+          name: "Voided",
+          creator: "JustXSoos",
+          thumbnail: "thumbnails/voided.jpg",
+        },
+        {
+          name: "Allegiance",
+          creator: "Nikroplays",
+          thumbnail: "thumbnails/allegiance.jpg",
+        },
+        {
+          name: "Lost Love",
+          creator: "TheBlackHell",
+          thumbnail: "thumbnails/lostlove.jpg",
+        },
+        {
+          name: "Dismal Duststorm",
+          creator: "Multiverse55",
+          thumbnail: "thumbnails/dismalduststorm.jpg",
+        },
+        {
+          name: "Precipitance",
+          creator: "Extravagon",
+          thumbnail: "thumbnails/precipitance.jpg",
+        },
+        {
+          name: "Forbidden Isle",
+          creator: "Sillow",
+          thumbnail: "thumbnails/forbiddenisle.jpg",
+        },
+        {
+          name: "Misty Mountains",
+          creator: "W4atherMan",
+          thumbnail: "thumbnails/mistymountains.jpg",
+        },
+        {
+          name: "Azurite",
+          creator: "Sillow",
+          thumbnail: "thumbnails/azurite.jpg",
+        },
+        {
+          name: "Sweater Weather",
+          creator: "VelYT",
+          thumbnail: "thumbnails/sweaterweather.jpg",
+        },
+        {
+          name: "niwa",
+          creator: "Teno",
+          thumbnail: "thumbnails/niwa.jpg",
+        },
+        {
+          name: "troll level",
+          creator: "lexycat",
+          thumbnail: "thumbnails/trolllevel.webp",
+        },
+        {
+          name: "Acu",
+          creator: "neigefeu",
+          thumbnail: "thumbnails/acu.webp",
+        },
+        {
+          name: "Cataclysm",
+          creator: "Ggb0y",
+          thumbnail: "thumbnails/cataclysm.jpg",
+        },
+        {
+          name: "Frizzantino Vibes",
+          creator: "Usermatt18",
+          thumbnail: "thumbnails/frizzantinovibes.jpg",
+        },
+        {
+          name: "LIGMO",
+          creator: "eimiie",
+          thumbnail: "thumbnails/ligmo.jpg",
+        },
+        {
+          name: "ICE Carbon Diablo X",
+          creator: "roadbose",
+          thumbnail: "thumbnails/icecarbondiablox.jpg",
+        },
+        {
+          name: "MINDBREAKER",
+          creator: "BIANOX",
+          thumbnail: "thumbnails/mindbreaker.jpg",
+        },
+        {
+          name: "Achlys",
+          creator: "Novaach",
+          thumbnail: "thumbnails/achlys.jpg",
+        },
+        {
+          name: "Necropolis",
+          creator: "IIINePtuneIII",
+          thumbnail: "thumbnails/necropolis.jpg",
+        },
+        {
+          name: "CMYK",
+          creator: "ewop",
+          thumbnail: "thumbnails/cmyk.jpg",
+        },
+        {
+          name: "Apollo 13",
+          creator: "Metalface221",
+          thumbnail: "thumbnails/apollo13.jpg",
+        },
+        {
+          name: "ULON",
+          creator: "OliSW",
+          thumbnail: "thumbnails/ulon.jpg",
+        },
+        {
+          name: "X Adventure",
+          creator: "pasiblitz",
+          thumbnail: "thumbnails/xadventure.jpg",
+        },
+        {
+          name: "8o",
+          creator: "Zobros",
+          thumbnail: "thumbnails/8o.jpg",
+        },
+        {
+          name: "Bare minimum",
+          creator: "Darcii",
+          thumbnail: "thumbnails/bareminimum.jpg",
+        },
+        {
+          name: "Acropolis",
+          creator: "Zobros",
+          thumbnail: "thumbnails/acropolis.jpg",
+        },
+        {
+          name: "Death Note",
+          creator: "Ruf",
+          thumbnail: "thumbnails/deathnote.jpg",
+        },
+        {
+          name: "Firewall",
+          creator: "Hinds",
+          thumbnail: "thumbnails/firewall.jpg",
+        },
+        {
+          name: "Horntail Cave",
+          creator: "KeiAs",
+          thumbnail: "thumbnails/horntailcave.jpg",
+        },
+        {
+          name: "Sadism",
+          creator: "Nox",
+          thumbnail: "thumbnails/sadism.jpg",
+        },
+        {
+          name: "Sleepless",
+          creator: "ChaSe",
+          thumbnail: "thumbnails/sleepless.jpg",
+        },
+        {
+          name: "Interstellar Infant",
+          creator: "Fault",
+          thumbnail: "thumbnails/interstellarinfant.jpg",
+        },
+        {
+          name: "CHROMA",
+          creator: "Renn241",
+          thumbnail: "thumbnails/chroma.jpg",
+        },
+        {
+          name: "Expire",
+          creator: "Texic",
+          thumbnail: "thumbnails/expire.jpg",
+        },
+        {
+          name: "Nyx",
+          creator: "DiamondDemon935",
+          thumbnail: "thumbnails/nyx.jpg",
+        },
+        {
+          name: "Chiroptera Venenata",
+          creator: "Polarbeahr",
+          thumbnail: "thumbnails/chiropteravenenata.jpg",
+        },
+        {
+          name: "PASSERS BY",
+          creator: "wokecat",
+          thumbnail: "thumbnails/passersby.webp",
+        },
+        {
+          name: "WONDER OF U",
+          creator: "GrappeL896",
+          thumbnail: "thumbnails/wonderofu.jpg",
+        },
+        {
+          name: "El Dorado",
+          creator: "LmAnubis",
+          thumbnail: "thumbnails/eldorado.jpg",
+        },
+        {
+          name: "FFFFFF",
+          creator: "Vlacc",
+          thumbnail: "thumbnails/ffffff.jpg",
+        },
+        {
+          name: "Hyperio Technia",
+          creator: "ML500",
+          thumbnail: "thumbnails/hyperiotechnia.jpg",
+        },
+        {
+          name: "Infrared",
+          creator: "Giron",
+          thumbnail: "thumbnails/infrared.jpg",
+        },
+        {
+          name: "Cursed Nightmare",
+          creator: "Ghotstav",
+          thumbnail: "thumbnails/cursednightmare.jpg",
+        },
+        {
+          name: "Through The Aether",
+          creator: "BibbyDib111",
+          thumbnail: "thumbnails/throughtheaether.jpg",
+        },
+        {
+          name: "Amuletum",
+          creator: "Toughfey",
+          thumbnail: "thumbnails/amuletum.jpg",
+        },
+        {
+          name: "Ultrachromatic",
+          creator: "gmdmann",
+          thumbnail: "thumbnails/ultrachromatic.jpg",
+        },
+        {
+          name: "EXG",
+          creator: "Grax",
+          thumbnail: "thumbnails/exg.jpg",
+        },
+        {
+          name: "Blast Furnace",
+          creator: "Samifying",
+          thumbnail: "thumbnails/blastfurnace.jpg",
+        },
+        {
+          name: "Magma Bound",
+          creator: "ScorchVx",
+          thumbnail: "thumbnails/magmabound.jpg",
+        },
+        {
+          name: "commatose",
+          creator: "rply",
+          thumbnail: "thumbnails/commatose.jpg",
+        },
+        {
+          name: "Future Funk II",
+          creator: "JonathanGD",
+          thumbnail: "thumbnails/futurefunkii.jpg",
+        },
+        {
+          name: "CraZy II",
+          creator: "DavJT",
+          thumbnail: "thumbnails/crazyii.jpg",
+        },
+        {
+          name: "free level",
+          creator: "heatherhayes",
+          thumbnail: "thumbnails/freelevel.jpg",
+        },
+        {
+          name: "Heritage",
+          creator: "Karma8",
+          thumbnail: "thumbnails/heritage.jpg",
+        },
+        {
+          name: "Night Terrors",
+          creator: "Hinds",
+          thumbnail: "thumbnails/nightterrors.jpg",
+        },
+        {
+          name: "The Four Elements",
+          creator: "Eiken",
+          thumbnail: "thumbnails/thefourelements.jpg",
+        },
+        {
+          name: "Multichromatic",
+          creator: "gmdmann",
+          thumbnail: "thumbnails/multichromatic.jpg",
+        },
+        {
+          name: "DAMAGE",
+          creator: "SonyaBMW",
+          thumbnail: "thumbnails/damage.jpg",
+        },
+        {
+          name: "Terraphobia",
+          creator: "Jakalope",
+          thumbnail: "thumbnails/terraphobia.jpg",
+        },
+        {
+          name: "Windy Landscape",
+          creator: "WOOGI1411",
+          thumbnail: "thumbnails/windylandscape.jpg",
+        },
+        {
+          name: "tower descent",
+          creator: "pocke",
+          thumbnail: "thumbnails/towerdescent.jpg",
+        },
+        {
+          name: "Super Mario Wave",
+          creator: "Toma36",
+          thumbnail: "thumbnails/supermariowave.jpg",
+        },
+        {
+          name: "Stalemate",
+          creator: "Nox",
+          thumbnail: "thumbnails/stalemate.jpg",
+        },
+        {
+          name: "Poltergeist",
+          creator: "Andromeda GMD",
+          thumbnail: "thumbnails/poltergeist.jpg",
+        },
+        {
+          name: "Sharp Minor",
+          creator: "Giron",
+          thumbnail: "thumbnails/sharpminor.jpg",
+        },
+        {
+          name: "FLORAL STROBE",
+          creator: "ivyteal",
+          thumbnail: "thumbnails/floralstrobe.jpg",
+        },
+        {
+          name: "Acidulus 8",
+          creator: "14Circles",
+          thumbnail: "thumbnails/acidulus8.jpg",
+        },
+        {
+          name: "ABLAZE",
+          creator: "zowl",
+          thumbnail: "thumbnails/ablaze.jpg",
+        },
+        {
+          name: "BLRPL LGHTS",
+          creator: "Novaach",
+          thumbnail: "thumbnails/blrpllghts.jpg",
+        },
+        {
+          name: "HYPERMANIA",
+          creator: "para",
+          thumbnail: "thumbnails/hypermania.jpg",
+        },
+        {
+          name: "Total Oblivion",
+          creator: "Nox",
+          thumbnail: "thumbnails/totaloblivion.jpg",
+        },
+        {
+          name: "Sedulous",
+          creator: "Samifying",
+          thumbnail: "thumbnails/sedulous.jpg",
+        },
+        {
+          name: "Psychosis",
+          creator: "Hinds",
+          thumbnail: "thumbnails/psychosis.jpg",
+        },
+        {
+          name: "TENDO",
+          creator: "gradientxd",
+          thumbnail: "thumbnails/tendo.jpg",
+        },
+        {
+          name: "HASH",
+          creator: "flash",
+          thumbnail: "thumbnails/hash.jpg",
+        },
+        {
+          name: "Somniare",
+          creator: "oleki",
+          thumbnail: "thumbnails/somniare.jpg",
+        },
+        {
+          name: "PROTOTYPE",
+          creator: "ivyteal",
+          thumbnail: "thumbnails/prototype.jpg",
+        },
+        {
+          name: "Slime",
+          creator: "Sillow",
+          thumbnail: "thumbnails/slime.jpg",
+        },
+        {
+          name: "Frigid Voyage",
+          creator: "Terraform",
+          thumbnail: "thumbnails/frigidvoyage.jpg",
+        },
+        // Add more levels here
+      ];
+
+      const list = document.getElementById("demonList");
+
+      levels.forEach((level, index) => {
+        const item = document.createElement("div");
+        item.className = "demon-item";
+
+        item.innerHTML = `
+        <img class="thumbnail" src="${level.thumbnail}" alt="Thumbnail" />
+        <div class="meta">
+          <h1>#${index + 1} ${level.name}</h1>
+          <p style="font-size: 30px">${level.creator}</p>
+        </div>
+      `;
+
+        list.appendChild(item);
+      });
+    </script>
+  </body>
+</html>
