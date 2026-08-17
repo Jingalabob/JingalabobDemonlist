@@ -110,6 +110,142 @@ main {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
+.top-1 {
+  transition: background 0.3s ease;
+}
+
+.top-1:hover {
+  background: linear-gradient(
+    90deg,
+    #ff4d4d3f,
+    #ff9f433f,
+    #ffe66d3f,
+    #4cd9643f,
+    #4da6ff3f,
+    #9b59ff3f,
+    #ff4dcd3f,
+    #ff4d4d3f
+  );
+
+  background-size: 300% 100%;
+
+  animation: rainbow-background 10s linear infinite;
+}
+
+@keyframes rainbow-background {
+  from {
+    background-position: 0% 50%;
+  }
+
+  to {
+    background-position: 300% 50%;
+  }
+}
+
+.top-2 {
+  position: relative;
+}
+
+/* Your existing background */
+.top-2:hover {
+  background: linear-gradient(
+    110deg,
+    rgba(60, 23, 87, 0.15),
+    rgba(60, 23, 87, 0.15),
+    rgba(255, 210, 60, 0.15),
+    rgba(60, 23, 87, 0.15),
+    rgba(60, 23, 87, 0.15)
+  );
+
+  background-size: 300% 100%;
+  animation: sink-background 20s linear infinite;
+}
+
+/* Border */
+.top-2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  border: 2px solid transparent;
+  border-radius: 8px;
+
+  background: linear-gradient(90deg, #9647ce, #ffd23c, #9647ce) border-box;
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  opacity: 0;
+  transition: opacity 0.2s ease;
+
+  pointer-events: none;
+}
+
+/* Border appears when the card is hovered */
+.top-2:hover::before {
+  opacity: 1;
+  animation: sink-border 4s linear infinite;
+}
+
+@keyframes sink-background {
+  from {
+    background-position: 0% 50%;
+  }
+
+  to {
+    background-position: 300% 50%;
+  }
+}
+
+@keyframes sink-border {
+  from {
+    background-position: 0% 50%;
+  }
+
+  to {
+    background-position: 200% 50%;
+  }
+}
+
+.top-3 {
+  transition: box-shadow 0.1s ease;
+}
+
+.top-3:hover {
+  box-shadow:
+    0 0 15px rgba(80, 120, 255, 0.3),
+    0 0 20px rgba(150, 60, 220, 0.2);
+  background: radial-gradient(
+    circle,
+    rgba(70, 40, 140, 0.15),
+    rgba(50, 100, 200, 0.15),
+    rgba(180, 60, 200, 0.15),
+    rgba(50, 100, 200, 0.15),
+    rgba(70, 40, 140, 0.15)
+  );
+
+  background-size: 300% 100%;
+  animation: diamond-disco 4s ease-in-out infinite alternate;
+}
+
+@keyframes diamond-disco {
+  from {
+    background-position:
+      0% 50%,
+      100% 50%;
+  }
+
+  to {
+    background-position:
+      100% 50%,
+      0% 50%;
+  }
+}
+
 /* =========================
    Rank
    ========================= */

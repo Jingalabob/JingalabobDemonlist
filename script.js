@@ -9,6 +9,10 @@ fetch("data/levels.json")
       const entry = document.createElement("article");
       entry.classList.add("demon-entry");
 
+      if (rank <= 3) {
+        entry.classList.add(`top-${rank}`);
+      }
+
       entry.innerHTML = `
                 <div class="demon-rank">#${rank}</div>
 
