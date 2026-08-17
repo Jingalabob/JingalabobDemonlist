@@ -1,0 +1,352 @@
+[
+  {
+    "name": "Calamity",
+    "creator": "Awedsy",
+    "tier": "Terrifying",
+    "thumbnail": "images/calamity.png",
+    "video": null
+  },
+  {
+    "name": "Sink",
+    "creator": "Awedsy",
+    "tier": "Terrifying",
+    "thumbnail": "images/sink.png",
+    "video": null
+  },
+  {
+    "name": "Diamond Disco",
+    "creator": "Zeronium",
+    "tier": "Remorseless",
+    "thumbnail": "images/diamonddisco.png",
+    "video": null
+  },
+  {
+    "name": "Infernal Abyss",
+    "creator": "Ggb0y & more",
+    "tier": "Insane",
+    "thumbnail": "images/infernalabyss.png",
+    "video": null
+  },
+  {
+    "name": "Ethereal Artifice",
+    "creator": "Zeroya & more",
+    "tier": "Extreme",
+    "thumbnail": "images/etherealartifice.webp",
+    "video": null
+  },
+  {
+    "name": "Ithacropolis",
+    "creator": "BIGMAC77 & more",
+    "tier": "Insane",
+    "thumbnail": "images/ithacropolis.png",
+    "video": null
+  },
+  {
+    "name": "Athanatos",
+    "creator": "IIExenityII & more",
+    "tier": "Insane",
+    "thumbnail": "images/athanatos.png",
+    "video": null
+  },
+  {
+    "name": "Falcon16",
+    "creator": "Lieb & more",
+    "tier": "Very Hard",
+    "thumbnail": "images/falcon16.png",
+    "video": null
+  },
+  {
+    "name": "Blade of Justice",
+    "creator": "Manix648 & LazerBlitz",
+    "tier": "Very Hard",
+    "thumbnail": "images/bladeofjustice.png",
+    "video": null
+  },
+  {
+    "name": "Infinite Inversion",
+    "creator": "Filqh",
+    "tier": "Very Hard",
+    "thumbnail": "images/infiniteinversion.png",
+    "video": null
+  },
+  {
+    "name": "Bloodbath",
+    "creator": "Riot & more",
+    "tier": "Very Hard",
+    "thumbnail": "images/bloodbath.jpg",
+    "video": null
+  },
+  {
+    "name": "moment",
+    "creator": "lexycat & IcEDCave",
+    "tier": "Very Hard",
+    "thumbnail": "images/moment.png",
+    "video": null
+  },
+  {
+    "name": "Anahita",
+    "creator": "zYuko & more",
+    "tier": "Very Hard",
+    "thumbnail": "images/anahita.jpg",
+    "video": null
+  },
+  {
+    "name": "gravity",
+    "creator": "KazaGD & slayerkirb",
+    "tier": "Hard",
+    "thumbnail": "images/gravity.png",
+    "video": null
+  },
+  {
+    "name": "Motorbreath",
+    "creator": "TwisterDude161",
+    "tier": "Hard",
+    "thumbnail": "images/motorbreath.jpg",
+    "video": null
+  },
+  {
+    "name": "OPSM1",
+    "creator": "VARSE",
+    "tier": "Hard",
+    "thumbnail": "images/opsm1.png",
+    "video": null
+  },
+  {
+    "name": "Sigma Interface",
+    "creator": "Platnuu",
+    "tier": "Hard",
+    "thumbnail": "images/sigmainterface.png",
+    "video": null
+  },
+  {
+    "name": "Prismatic Haze",
+    "creator": "Cirtrax & Gizbro",
+    "tier": "Hard",
+    "thumbnail": "images/prismatichaze.png",
+    "video": null
+  },
+  {
+    "name": "Carcano",
+    "creator": "Asuith & TomsoN",
+    "tier": "Very Hard",
+    "thumbnail": "images/carcano.png",
+    "video": null
+  },
+  {
+    "name": "GANGIMARI",
+    "creator": "64x",
+    "tier": "Medium",
+    "thumbnail": "images/gangimari.png",
+    "video": null
+  },
+  {
+    "name": "Heartbeat",
+    "creator": "KrmaL & more",
+    "tier": "Medium",
+    "thumbnail": "images/heartbeat.jpg",
+    "video": null
+  },
+  {
+    "name": "Aftermath",
+    "creator": "IIExenityII & more",
+    "tier": "Hard",
+    "thumbnail": "images/aftermath.png",
+    "video": null
+  },
+  {
+    "name": "cold planet",
+    "creator": "Drakosa & more",
+    "tier": "Medium",
+    "thumbnail": "images/coldplanet.png",
+    "video": null
+  },
+  {
+    "name": "U235",
+    "creator": "oleki",
+    "tier": "Medium",
+    "thumbnail": "images/u235.png",
+    "video": null
+  },
+  {
+    "name": "Concaved Memories",
+    "creator": "CairoX & more",
+    "tier": "Medium",
+    "thumbnail": "images/concavedmemories.png",
+    "video": null
+  },
+  {
+    "name": "sarthix",
+    "creator": "Zeptrus",
+    "tier": "Easy",
+    "thumbnail": "images/sarthix.jpg",
+    "video": null
+  },
+  {
+    "name": "Artificial Dream",
+    "creator": "iIiViRuZiIi",
+    "tier": "Easy",
+    "thumbnail": "images/artificialdream.jpg",
+    "video": null
+  },
+  {
+    "name": "Napalm",
+    "creator": "Marwec & more",
+    "tier": "Easy",
+    "thumbnail": "images/napalm.png",
+    "video": null
+  },
+  {
+    "name": "Warning",
+    "creator": "TwisterDude161",
+    "tier": "Medium",
+    "thumbnail": "images/warning.png",
+    "video": null
+  },
+  {
+    "name": "nowdead",
+    "creator": "meowdead",
+    "tier": "Easy",
+    "thumbnail": "images/nowdead.jpg",
+    "video": null
+  },
+  {
+    "name": "Bangarang",
+    "creator": "LP44",
+    "tier": "Beginner",
+    "thumbnail": "images/bangarang.png",
+    "video": null
+  },
+  {
+    "name": "Penombre",
+    "creator": "ZephiroX",
+    "tier": "Beginner",
+    "thumbnail": "images/penombre.png",
+    "video": null
+  },
+  {
+    "name": "Hidden in the Sand",
+    "creator": "ASBCHazel",
+    "tier": "Beginner",
+    "thumbnail": "images/hiddeninthesand.jpg",
+    "video": null
+  },
+  {
+    "name": "Lost Love",
+    "creator": "TheBlackHell",
+    "tier": "Beginner",
+    "thumbnail": "images/lostlove.png",
+    "video": null
+  },
+  {
+    "name": "Dismal Duststorm",
+    "creator": "Multiverse55",
+    "tier": "Beginner",
+    "thumbnail": "images/dismalduststorm.png",
+    "video": null
+  },
+  {
+    "name": "Forbidden Isle",
+    "creator": "Sillow",
+    "tier": "Beginner",
+    "thumbnail": "images/forbiddenisle.png",
+    "video": null
+  },
+  {
+    "name": "Fun Friday",
+    "creator": "Zeronium",
+    "tier": "Beginner",
+    "thumbnail": "images/funfriday.png",
+    "video": null
+  },
+  {
+    "name": "Voided",
+    "creator": "JustXSoos",
+    "tier": "Beginner",
+    "thumbnail": "images/voided.png",
+    "video": null
+  },
+  {
+    "name": "Volume",
+    "creator": "Metalface221 & more",
+    "tier": "Easy",
+    "thumbnail": "images/volume.png",
+    "video": null
+  },
+  {
+    "name": "Azurite",
+    "creator": "Sillow",
+    "tier": "Beginner",
+    "thumbnail": "images/azurite.png",
+    "video": null
+  },
+  {
+    "name": "Precipitance",
+    "creator": "Extravagon",
+    "tier": "Beginner",
+    "thumbnail": "images/precipitance.png",
+    "video": null
+  },
+  {
+    "name": "iridium",
+    "creator": "spark",
+    "tier": "Beginner",
+    "thumbnail": "images/iridium.png",
+    "video": null
+  },
+  {
+    "name": "SUBVERSIVE",
+    "creator": "Snowr33de & more",
+    "tier": "Beginner",
+    "thumbnail": "images/subversive.jpg",
+    "video": null
+  },
+  {
+    "name": "Misty Mountains",
+    "creator": "We4therMan",
+    "tier": "Beginner",
+    "thumbnail": "images/mistymountains.png",
+    "video": null
+  },
+  {
+    "name": "Allegiance",
+    "creator": "nikroplays",
+    "tier": "Beginner",
+    "thumbnail": "images/allegiance.jpg",
+    "video": null
+  },
+  {
+    "name": "Sweater Weather",
+    "creator": "VelYT",
+    "tier": "Beginner",
+    "thumbnail": "images/sweaterweather.png",
+    "video": null
+  },
+  {
+    "name": "niwa",
+    "creator": "Teno & more",
+    "tier": "Beginner",
+    "thumbnail": "images/niwa.png",
+    "video": null
+  },
+  {
+    "name": "troll level",
+    "creator": "lexycat & more",
+    "tier": "Beginner",
+    "thumbnail": "images/trolllevel.png",
+    "video": null
+  },
+  {
+    "name": "Acu",
+    "creator": "neigefeu",
+    "tier": "Beginner",
+    "thumbnail": "images/acu.png",
+    "video": null
+  },
+  {
+    "name": "Cataclysm",
+    "creator": "Ggb0y",
+    "tier": "Beginner",
+    "thumbnail": "images/cataclysm.png",
+    "video": null
+  }
+]
